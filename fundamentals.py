@@ -2,7 +2,7 @@ from ib_insync import *
 from bs4 import BeautifulSoup as bs
 
 ib = IB()
-ib.connect('127.0.0.1', 7497, clientId=1)
+ib.connect('127.0.0.1', 7496, clientId=1)
 
 stock = Stock('AAPL', 'SMART', 'USD')
 

@@ -1,12 +1,12 @@
-from ib_insync import *
+from ib_insync import * # type: ignore
 
-ib = IB()
+ib = IB() # type: ignore
 
 # use this instead for IB Gateway
 # ib.connect('127.0.0.1', 7497, clientId=1)
 
 # us this for TWS (Workstation)
-ib.connect('127.0.0.1', 7497, clientId=1)
+ib.connect('127.0.0.1', 7496, clientId=1)
 
 stock = Stock('AMD', 'SMART', 'USD')
 
