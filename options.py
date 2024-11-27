@@ -10,12 +10,12 @@ ib.sleep(1)
 
 #chains = ib.reqSecDefOptParams(stock.symbol, '', stock.secType, stock.conId)
 
-symbol='SPX'
+symbol='AAPL'
 exchange='CBOE'
 underlying = Index(symbol, exchange)
 contract_details = ib.reqContractDetails(underlying)
 
-conId = contract_details[0].contract.conId
+conId = contract_details[5].contract.conId
 print(f"ConId for {symbol}: {conId}")
 
 option_chain = ib.reqSecDefOptParams(underlying.symbol, '', underlying.secType, conId)
